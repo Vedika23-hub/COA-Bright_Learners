@@ -1,0 +1,20 @@
+M = -13 (110011), Q = 11 (001011), n = 6
+
+BOOTH'S ALGORITHM
+Step  Bits  Operation      A(after op)    A        Q        Q-1
+1     10    A = A - M      001101         000110   100101   1
+2     11    no operation   000110         000011   010010   1
+3     01    A = A + M      110110         111011   001001   0
+4     10    A = A - M      001000         000100   000100   1
+5     01    A = A + M      110111         111011   100010   0
+6     00    no operation   111011         111101   110001   0
+Product = -143  (111101110001)  expected -143
+Add/subtract operations: 4
+
+BIT-PAIR (MODIFIED BOOTH) RECODING
+Step  Bits  Operation      A(after op)    A        Q        Q-1
+1     110   A = A - M      0001101        0000011  010010   1
+2     101   A = A - M      0010000        0000100  000100   1
+3     001   A = A + M      1110111        1111101  110001   0
+Product = -143  (111101110001)  expected -143
+Add/subtract operations: 3
