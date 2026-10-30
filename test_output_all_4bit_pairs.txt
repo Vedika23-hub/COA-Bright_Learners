@@ -1,0 +1,8 @@
+
+All 4-bit signed pairs (-8 to 7): 256 pairs
+Incorrect products         : 0
+Booth total add/sub ops    : 512 (avg 2.000, max 4)
+Bit-pair total add/sub ops : 384 (avg 1.500, max 2)
+Cycles per multiplication  : Booth 4, Bit-pair 2
+Bit-pair fewer ops in 112 pairs, equal in 144, more in 0
+Reduction in ops           : 25.0%
